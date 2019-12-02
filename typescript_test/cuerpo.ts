@@ -1,0 +1,1 @@
+let cuerpo:string="Cuerpo de la página";
