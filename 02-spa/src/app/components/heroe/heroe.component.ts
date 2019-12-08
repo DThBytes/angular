@@ -13,12 +13,20 @@ export class HeroeComponent {
 
   heroe: any = {};
 
+  getLogo() {
+    if (this.heroe.casa === 'Marvel') {
+      return 'assets/img/MARVEL_logo.png';
+    } else {
+      return 'assets/img/DC_logo.png';
+    }
+  }
+
   constructor( private activatedRoute: ActivatedRoute,
                private _heroeService: HeroesService
     ) {
     this.activatedRoute.params.subscribe( params => {
-        console.log(params.id);
-        this.heroe = this._heroeService.getHeroe ( params.id);
+      this.heroe = this._heroeService.getHeroe ( params.id);
+      /* console.log(this.heroe); */
     });
 
   }
