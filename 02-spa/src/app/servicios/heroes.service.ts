@@ -47,6 +47,13 @@ export class HeroesService {
           casa: "Marvel"
         },
         {
+          nombre: "Aquaman",
+          bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
+          img: "assets/img/aquaman.png",
+          aparicion: "1941-11-01",
+          casa:"DC"
+        },
+        {
           nombre: "Wolverine",
           bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
           img: "assets/img/wolverine.png",
