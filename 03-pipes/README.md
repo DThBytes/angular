@@ -1,10 +1,6 @@
-# Spotiapp
+# Pipes
 
-<<<<<<< HEAD
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
-=======
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
->>>>>>> 5701beca4cdc16233a32b4fe731780765d05c3c0
 
 ## Development server
 
