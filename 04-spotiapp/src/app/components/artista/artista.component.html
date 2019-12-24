@@ -38,7 +38,8 @@
                     <td>{{ tt.name }}</td>
                     <td>{{ tt.album.name }}</td>
                     <td>
-                        <audio [src]="tt.preview_url" controls></audio>
+                        <!-- <audio [src]="tt.preview_url" controls></audio> -->
+                        <iframe [src]="tt.id | domseguro :'https://open.spotify.com/embed/track/'" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </td>
                 </tr>
             </tbody>
