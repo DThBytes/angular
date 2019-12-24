@@ -21,3 +21,27 @@
         </button>
     </div>
 </div>
+<div class="row m-5">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Canción</th>
+                    <th>Album</th>
+                    <th>Vista previa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tt of topTracks">
+                    <td><img [src]="tt.album.images | noimage" class="img-thumb" alt=""></td>
+                    <td>{{ tt.name }}</td>
+                    <td>{{ tt.album.name }}</td>
+                    <td>
+                        <audio [src]="tt.preview_url" controls></audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
