@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { compileNgModule } from '@angular/compiler';
 import { Lista } from 'src/app/models/lista.model';
+// import { ListasComponent } from 'src/app/components/listas/listas.component';
+
 
 @Component({
   selector: 'app-tab1',
@@ -11,8 +13,11 @@ import { Lista } from 'src/app/models/lista.model';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  constructor() {
 
-  listas: any[] = [];
+  }
+
+  /* listas: any[] = [];
   constructor( public deseosService: DeseosService,
                private router: Router,
                private alertCtrl: AlertController ) {
@@ -57,5 +62,5 @@ export class Tab1Page {
   listaSeleccionada( lista: Lista ) {
     this.router.navigateByUrl(`/tabs/tab1/agregar/${ lista.id }`);
   }
-
+ */
 }
